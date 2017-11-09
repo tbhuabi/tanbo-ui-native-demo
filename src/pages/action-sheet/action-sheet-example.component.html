@@ -1,0 +1,25 @@
+<doc-loader>
+  <ui-page>
+    <ui-header>
+      <ui-navbar>
+        <ui-title>Action sheet</ui-title>
+      </ui-navbar>
+    </ui-header>
+    <ui-content>
+      <p class="container">
+        <button class="btn btn-block primary" (click)="trigger(true)">点我弹出</button>
+      </p>
+      <ui-action-sheet [show]="isShow" (click)="trigger(false)">
+        <div class="sheet-content" uiStopPropagation="click">
+          <ui-list>
+            <ui-list-item>action1</ui-list-item>
+            <ui-list-item>action2</ui-list-item>
+            <ui-list-item>action3</ui-list-item>
+            <ui-list-item>action4</ui-list-item>
+            <ui-list-item>action5</ui-list-item>
+          </ui-list>
+        </div>
+      </ui-action-sheet>
+    </ui-content>
+  </ui-page>
+</doc-loader>
