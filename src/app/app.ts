@@ -11,14 +11,14 @@ export class AppComponent implements AfterViewInit {
 
     @HostListener('window:message', ['$event'])
     message(event: any) {
-        if (typeof event.data === 'string') {
+        if (typeof event.data === 'string' && event.data !== '') {
             this.router.navigateByUrl('/' + event.data);
         }
     }
 
     ngAfterViewInit() {
         const parent = window.parent;
-        if (parent) {
+        if (parent && parent !== window) {
             parent.postMessage('loaded', '*');
         }
     }
