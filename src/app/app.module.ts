@@ -12,7 +12,9 @@ import { AlertExampleComponent } from '../pages/alert/alert-example.component';
 import { ConfirmExampleComponent } from '../pages/confirm/confirm-example.component';
 import { CollectionExampleComponent } from '../pages/collection/collection-example.component';
 import { ListExampleComponent } from '../pages/list/list-example.component';
-import { ScrollComponent } from '../pages/scroll/scroll.component';
+import { ScrollExampleComponent } from '../pages/scroll/scroll-example.component';
+import { RefreshExampleComponent } from '../pages/refresh/refresh-example.component';
+import { SlideExampleComponent } from '../pages/slide/slide-example.component';
 
 @NgModule({
     imports: [
@@ -32,7 +34,9 @@ import { ScrollComponent } from '../pages/scroll/scroll.component';
         ConfirmExampleComponent,
         CollectionExampleComponent,
         ListExampleComponent,
-        ScrollComponent
+        ScrollExampleComponent,
+        RefreshExampleComponent,
+        SlideExampleComponent
     ],
     bootstrap: [AppComponent]
 })
