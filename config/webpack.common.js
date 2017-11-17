@@ -38,7 +38,9 @@ module.exports = {
             }]
         }, {
             test: /\.ts$/,
-            use: isProduction ? ['@ngtools/webpack'] : ['ng-router-loader', 'awesome-typescript-loader', 'angular2-template-loader', './config/ng-hot-replacement-loader']
+            use: isProduction ?
+                ['ng-router-loader', 'awesome-typescript-loader', 'angular2-template-loader'] :
+                ['ng-router-loader', 'awesome-typescript-loader', 'angular2-template-loader', './config/ng-hot-replacement-loader']
         }, {
             test: /\.md$/,
             use: ['raw-loader']
