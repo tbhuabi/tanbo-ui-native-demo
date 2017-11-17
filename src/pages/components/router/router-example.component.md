@@ -1,3 +1,5 @@
+`UIRouter` <strong class="color-danger">暂时不支持路由嵌套</strong>，在整页跳转目前没发现bug，但嵌套时，因为复用策略，会导致 angular 不能正常跳转。我将在近期想办法解决。
+
 ### uiRouterLink 指令
 
 `uiRouterLink` 指令和 angular 官方的 `routerLink` 的使用方法是完全一样的，也就是说，你只需要把 `routerLink` 改为 `uiRouterLink`。
