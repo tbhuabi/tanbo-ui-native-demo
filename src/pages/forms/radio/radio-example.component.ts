@@ -4,4 +4,6 @@ import { Component } from '@angular/core';
     templateUrl: './radio-example.component.html'
 })
 export class RadioExampleComponent {
+    r0: string = '';
+    r1: string = '';
 }

@@ -4,4 +4,12 @@ import { Component } from '@angular/core';
     templateUrl: './button-example.component.html'
 })
 export class ButtonExampleComponent {
+    loadingState: boolean = false;
+
+    load() {
+        this.loadingState = true;
+        setTimeout(() => {
+            this.loadingState = false;
+        }, 3000);
+    }
 }

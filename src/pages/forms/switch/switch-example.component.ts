@@ -4,4 +4,5 @@ import { Component } from '@angular/core';
     templateUrl: './switch-example.component.html'
 })
 export class SwitchExampleComponent {
+    result: boolean = false;
 }

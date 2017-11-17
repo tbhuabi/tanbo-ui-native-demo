@@ -37,7 +37,8 @@ const appRoutes: Routes = [{
     data: {
         ts: require('!!raw-loader!../pages/components/action-sheet/action-sheet-example.component'),
         html: require('../pages/components/action-sheet/action-sheet-example.component.html'),
-        css: require('!!raw-loader!../pages/components/action-sheet/action-sheet-example.component.scss')
+        css: require('!!raw-loader!../pages/components/action-sheet/action-sheet-example.component.scss'),
+        doc: require('../pages/components/action-sheet/action-sheet-example.component.md')
     }
 }, {
     path: 'alert',
@@ -45,6 +46,7 @@ const appRoutes: Routes = [{
     data: {
         ts: require('!!raw-loader!../pages/components/alert/alert-example.component'),
         html: require('../pages/components/alert/alert-example.component.html'),
+        doc: require('../pages/components/alert/alert-example.component.md')
     }
 }, {
     path: 'collection',
@@ -52,7 +54,7 @@ const appRoutes: Routes = [{
     data: {
         ts: require('!!raw-loader!../pages/components/collection/collection-example.component'),
         html: require('../pages/components/collection/collection-example.component.html'),
-        doc: require('../pages/components/collection/collection-example.component.md'),
+        doc: require('../pages/components/collection/collection-example.component.md')
     }
 }, {
     path: 'collection-tab',
@@ -69,6 +71,7 @@ const appRoutes: Routes = [{
     data: {
         ts: require('!!raw-loader!../pages/components/confirm/confirm-example.component'),
         html: require('../pages/components/confirm/confirm-example.component.html'),
+        doc: require('../pages/components/confirm/confirm-example.component.md')
     }
 }, {
     path: 'list',
@@ -92,6 +95,7 @@ const appRoutes: Routes = [{
     data: {
         ts: require('!!raw-loader!../pages/components/refresh/refresh-example.component'),
         html: require('../pages/components/refresh/refresh-example.component.html'),
+        css: require('!!raw-loader!../pages/components/refresh/refresh-example.component.scss'),
         doc: require('../pages/components/refresh/refresh-example.component.md')
     }
 }, {

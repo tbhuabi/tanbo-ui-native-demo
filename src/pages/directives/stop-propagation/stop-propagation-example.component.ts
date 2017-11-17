@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
     styleUrls: ['./stop-propagation-example.component.scss']
 })
 export class StopPropagationExampleComponent {
+    parentHandle() {
+        alert('父级被点击了');
+    }
+
+    childHandle() {
+        alert('子级被点击了');
+    }
 }

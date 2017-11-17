@@ -6,7 +6,11 @@
       </ui-navbar>
     </ui-header>
     <ui-content>
-      <ui-collection>
+      <ui-collection
+              (sliding)="sliding($event)"
+              (slidingFinish)="slidingFinish($event)"
+              [vertical]="false"
+              [index]="0">
         <ui-collection-item>第一页</ui-collection-item>
         <ui-collection-item>第二页</ui-collection-item>
         <ui-collection-item>第三页</ui-collection-item>

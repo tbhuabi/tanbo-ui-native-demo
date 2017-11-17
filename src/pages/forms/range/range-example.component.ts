@@ -4,4 +4,5 @@ import { Component } from '@angular/core';
     templateUrl: './range-example.component.html'
 })
 export class RangeExampleComponent {
+    progress: number = 50;
 }

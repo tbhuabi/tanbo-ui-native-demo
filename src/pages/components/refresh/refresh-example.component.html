@@ -6,9 +6,15 @@
       </ui-navbar>
     </ui-header>
     <ui-content>
-      <ui-refresher></ui-refresher>
-      <ui-scroll>
-
+      <ui-refresher [progress]="progress"></ui-refresher>
+      <ui-scroll class="container"
+                 [openRefresh]="true"
+                 [openInfinite]="true"
+                 (dragging)="dragging($event)"
+                 (infinite)="infinite($event)"
+                 (refresh)="refresh($event)">
+        <div><strong>下拉的距离为{{progress}}像素</strong></div>
+        <p *ngFor="let item of list; let i = index">{{i}}---{{item}}</p>
       </ui-scroll>
     </ui-content>
   </ui-page>

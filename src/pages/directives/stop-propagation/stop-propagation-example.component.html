@@ -5,6 +5,12 @@
         <ui-title>StopPropagation</ui-title>
       </ui-navbar>
     </ui-header>
-    <ui-content></ui-content>
+    <ui-content>
+      <div class="parent" (click)="parentHandle()">
+        <p>我是父级</p>
+        <button class="btn primary" type="button" uiStopPropagation (click)="childHandle()">点我不会冒泡</button>
+        <button class="btn primary" type="button" (click)="childHandle()">点我会冒泡</button>
+      </div>
+    </ui-content>
   </ui-page>
 </doc-loader>

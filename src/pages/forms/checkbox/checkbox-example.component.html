@@ -5,6 +5,44 @@
         <ui-title>Checkbox</ui-title>
       </ui-navbar>
     </ui-header>
-    <ui-content></ui-content>
+    <ui-content>
+      <div class="container">
+        <h3>不同风格的 Checkbox</h3>
+        <p>
+          <ui-input class="primary" type="checkbox"></ui-input>
+          <ui-input class="info" type="checkbox"></ui-input>
+          <ui-input class="danger" type="checkbox"></ui-input>
+          <ui-input class="warning" type="checkbox"></ui-input>
+          <ui-input class="success" type="checkbox"></ui-input>
+        </p>
+        <p style="font-size: 30px;">
+          <ui-input class="primary" type="checkbox"></ui-input>
+          <ui-input class="info" type="checkbox"></ui-input>
+          <ui-input class="danger" type="checkbox"></ui-input>
+          <ui-input class="warning" type="checkbox"></ui-input>
+          <ui-input class="success" type="checkbox"></ui-input>
+        </p>
+        <h3>包含在 label 内的</h3>
+        <p>
+          <label><ui-input [(ngModel)]="c1" type="checkbox"></ui-input> 选项1为{{c1}}</label>
+        </p>
+        <p>
+          <label><ui-input [(ngModel)]="c2" type="checkbox"></ui-input> 选项2为{{c2}}</label>
+        </p>
+        <p>
+          <label><ui-input [(ngModel)]="c3" type="checkbox"></ui-input> 选项3为{{c3}}</label>
+        </p>
+        <h3>在 label 外的</h3>
+        <p>
+          <label for="id1">选项4为{{c4}}</label><ui-input [(ngModel)]="c4" forId="id1" type="checkbox"></ui-input>
+        </p>
+        <p>
+          <label for="id2">选项5为{{c5}}</label><ui-input [(ngModel)]="c5" forId="id2" type="checkbox"></ui-input>
+        </p>
+        <p>
+          <label for="id3">选项6为{{c6}}</label><ui-input [(ngModel)]="c6" forId="id3" type="checkbox"></ui-input>
+        </p>
+      </div>
+    </ui-content>
   </ui-page>
 </doc-loader>

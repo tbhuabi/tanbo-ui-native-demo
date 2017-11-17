@@ -5,6 +5,12 @@
         <ui-title>Button</ui-title>
       </ui-navbar>
     </ui-header>
-    <ui-content></ui-content>
+    <ui-content>
+      <p class="text-center">
+        <ui-button class="btn primary" [loading]="loadingState" (click)="load()">
+          点我会出现加载效果
+        </ui-button>
+      </p>
+    </ui-content>
   </ui-page>
 </doc-loader>

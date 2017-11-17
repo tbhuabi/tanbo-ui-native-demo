@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule }  from '@angular/platform-browser';
 import { UIComponentsModule, UIFormsModule, UIDirectivesModule } from 'tanbo-ui-native';
@@ -44,6 +45,7 @@ import { ModelValidatorExampleComponent } from '../pages/forms/model-validator/m
         UIFormsModule,
         UIDirectivesModule,
         UIComponentsModule,
+        FormsModule,
         routing
     ],
     declarations: [
