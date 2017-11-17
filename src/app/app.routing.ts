@@ -36,7 +36,7 @@ const appRoutes: Routes = [{
     component: ActionSheetExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/components/action-sheet/action-sheet-example.component'),
-        html: require('../pages/components/action-sheet/action-sheet-example.component.html'),
+        html: require('!!raw-loader!../pages/components/action-sheet/action-sheet-example.component.html'),
         css: require('!!raw-loader!../pages/components/action-sheet/action-sheet-example.component.scss'),
         doc: require('../pages/components/action-sheet/action-sheet-example.component.md')
     }
@@ -45,7 +45,7 @@ const appRoutes: Routes = [{
     component: AlertExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/components/alert/alert-example.component'),
-        html: require('../pages/components/alert/alert-example.component.html'),
+        html: require('!!raw-loader!../pages/components/alert/alert-example.component.html'),
         doc: require('../pages/components/alert/alert-example.component.md')
     }
 }, {
@@ -53,7 +53,7 @@ const appRoutes: Routes = [{
     component: CollectionExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/components/collection/collection-example.component'),
-        html: require('../pages/components/collection/collection-example.component.html'),
+        html: require('!!raw-loader!../pages/components/collection/collection-example.component.html'),
         doc: require('../pages/components/collection/collection-example.component.md')
     }
 }, {
@@ -61,7 +61,7 @@ const appRoutes: Routes = [{
     component: CollectionTabExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/components/collection-tab/collection-tab-example.component'),
-        html: require('../pages/components/collection-tab/collection-tab-example.component.html'),
+        html: require('!!raw-loader!../pages/components/collection-tab/collection-tab-example.component.html'),
         css: require('!!raw-loader!../pages/components/collection-tab/collection-tab-example.component.scss'),
         doc: require('../pages/components/collection-tab/collection-tab-example.component.md')
     }
@@ -70,7 +70,7 @@ const appRoutes: Routes = [{
     component: ConfirmExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/components/confirm/confirm-example.component'),
-        html: require('../pages/components/confirm/confirm-example.component.html'),
+        html: require('!!raw-loader!../pages/components/confirm/confirm-example.component.html'),
         doc: require('../pages/components/confirm/confirm-example.component.md')
     }
 }, {
@@ -78,7 +78,7 @@ const appRoutes: Routes = [{
     component: ListExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/components/list/list-example.component'),
-        html: require('../pages/components/list/list-example.component.html'),
+        html: require('!!raw-loader!../pages/components/list/list-example.component.html'),
         doc: require('../pages/components/list/list-example.component.md')
     }
 }, {
@@ -86,7 +86,7 @@ const appRoutes: Routes = [{
     component: ScrollExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/components/scroll/scroll-example.component'),
-        html: require('../pages/components/scroll/scroll-example.component.html'),
+        html: require('!!raw-loader!../pages/components/scroll/scroll-example.component.html'),
         doc: require('../pages/components/scroll/scroll-example.component.md')
     }
 }, {
@@ -94,7 +94,7 @@ const appRoutes: Routes = [{
     component: RefreshExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/components/refresh/refresh-example.component'),
-        html: require('../pages/components/refresh/refresh-example.component.html'),
+        html: require('!!raw-loader!../pages/components/refresh/refresh-example.component.html'),
         css: require('!!raw-loader!../pages/components/refresh/refresh-example.component.scss'),
         doc: require('../pages/components/refresh/refresh-example.component.md')
     }
@@ -103,7 +103,7 @@ const appRoutes: Routes = [{
     component: SlideExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/components/slide/slide-example.component'),
-        html: require('../pages/components/slide/slide-example.component.html'),
+        html: require('!!raw-loader!../pages/components/slide/slide-example.component.html'),
         css: require('!!raw-loader!../pages/components/slide/slide-example.component.scss'),
         doc: require('../pages/components/slide/slide-example.component.md')
     }
@@ -112,7 +112,7 @@ const appRoutes: Routes = [{
     component: RouterExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/components/router/router-example.component'),
-        html: require('../pages/components/router/router-example.component.html'),
+        html: require('!!raw-loader!../pages/components/router/router-example.component.html'),
         doc: require('../pages/components/router/router-example.component.md')
     }
 }, {
@@ -123,7 +123,7 @@ const appRoutes: Routes = [{
     component: TabExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/components/tab/tab-example.component.ts'),
-        html: require('../pages/components/tab/tab-example.component.html'),
+        html: require('!!raw-loader!../pages/components/tab/tab-example.component.html'),
         doc: require('../pages/components/tab/tab-example.component.md')
     },
     children: [{
@@ -148,7 +148,7 @@ const appRoutes: Routes = [{
     component: StopPropagationExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/directives/stop-propagation/stop-propagation-example.component'),
-        html: require('../pages/directives/stop-propagation/stop-propagation-example.component.html'),
+        html: require('!!raw-loader!../pages/directives/stop-propagation/stop-propagation-example.component.html'),
         css: require('!!raw-loader!../pages/directives/stop-propagation/stop-propagation-example.component.scss'),
         doc: require('../pages/directives/stop-propagation/stop-propagation-example.component.md')
     }
@@ -157,7 +157,7 @@ const appRoutes: Routes = [{
     component: ButtonExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/forms/button/button-example.component'),
-        html: require('../pages/forms/button/button-example.component.html'),
+        html: require('!!raw-loader!../pages/forms/button/button-example.component.html'),
         doc: require('../pages/forms/button/button-example.component.md')
     }
 }, {
@@ -165,7 +165,7 @@ const appRoutes: Routes = [{
     component: CheckboxExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/forms/checkbox/checkbox-example.component'),
-        html: require('../pages/forms/checkbox/checkbox-example.component.html'),
+        html: require('!!raw-loader!../pages/forms/checkbox/checkbox-example.component.html'),
         doc: require('../pages/forms/checkbox/checkbox-example.component.md')
     }
 }, {
@@ -173,7 +173,7 @@ const appRoutes: Routes = [{
     component: RadioExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/forms/radio/radio-example.component'),
-        html: require('../pages/forms/radio/radio-example.component.html'),
+        html: require('!!raw-loader!../pages/forms/radio/radio-example.component.html'),
         doc: require('../pages/forms/radio/radio-example.component.md')
     }
 }, {
@@ -181,7 +181,7 @@ const appRoutes: Routes = [{
     component: RangeExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/forms/range/range-example.component'),
-        html: require('../pages/forms/range/range-example.component.html'),
+        html: require('!!raw-loader!../pages/forms/range/range-example.component.html'),
         doc: require('../pages/forms/range/range-example.component.md')
     }
 }, {
@@ -189,7 +189,7 @@ const appRoutes: Routes = [{
     component: SelectExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/forms/select/select-example.component'),
-        html: require('../pages/forms/select/select-example.component.html'),
+        html: require('!!raw-loader!../pages/forms/select/select-example.component.html'),
         doc: require('../pages/forms/select/select-example.component.md')
     }
 }, {
@@ -197,7 +197,7 @@ const appRoutes: Routes = [{
     component: SwitchExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/forms/switch/switch-example.component'),
-        html: require('../pages/forms/switch/switch-example.component.html'),
+        html: require('!!raw-loader!../pages/forms/switch/switch-example.component.html'),
         doc: require('../pages/forms/switch/switch-example.component.md')
     }
 }, {
@@ -205,7 +205,7 @@ const appRoutes: Routes = [{
     component: FormValidatorExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/forms/form-validator/form-validator-example.component'),
-        html: require('../pages/forms/form-validator/form-validator-example.component.html'),
+        html: require('!!raw-loader!../pages/forms/form-validator/form-validator-example.component.html'),
         doc: require('../pages/forms/form-validator/form-validator-example.component.md')
     }
 }, {
@@ -213,7 +213,7 @@ const appRoutes: Routes = [{
     component: ModelValidatorExampleComponent,
     data: {
         ts: require('!!raw-loader!../pages/forms/model-validator/model-validator-example.component'),
-        html: require('../pages/forms/model-validator/model-validator-example.component.html'),
+        html: require('!!raw-loader!../pages/forms/model-validator/model-validator-example.component.html'),
         doc: require('../pages/forms/model-validator/model-validator-example.component.md')
     }
 }];
