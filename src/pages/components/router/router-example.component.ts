@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { UIRouter } from 'tanbo-ui-native';
+import { Router } from '@angular/router';
 
 @Component({
     templateUrl: './router-example.component.html'
 })
 export class RouterExampleComponent {
-    constructor(private uiRouter: UIRouter) {
+    constructor(private router: Router) {
 
     }
 
     goToPage() {
-        this.uiRouter.navigate(['../child']);
+        this.router.navigate(['../child']);
     }
 }
