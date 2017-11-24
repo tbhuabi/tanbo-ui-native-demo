@@ -13,7 +13,7 @@ export class AppComponent implements AfterViewInit {
 
     @HostListener('window:message', ['$event'])
     message(event: any) {
-        if (typeof event.data === 'string' && event.data !== '') {
+        if (typeof event.data === 'string') {
             let url: string;
             if (event.data === 'tab') {
                 url = '/tab/(route1:tab1//route2:tab2//route3:tab3//route4:tab4)';

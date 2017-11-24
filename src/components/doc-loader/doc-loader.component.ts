@@ -1,16 +1,12 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute, Router, Event, NavigationEnd } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'doc-loader',
     templateUrl: './doc-loader.component.html'
 })
-export class DocLoaderComponent implements OnInit, OnDestroy {
-    sub: Subscription;
-
-    constructor(private activatedRoute: ActivatedRoute,
-                private router: Router) {
+export class DocLoaderComponent implements OnInit {
+    constructor(private activatedRoute: ActivatedRoute) {
     }
 
     ngOnInit() {
@@ -19,20 +15,5 @@ export class DocLoaderComponent implements OnInit, OnDestroy {
         if (parent) {
             parent.postMessage(data, '*');
         }
-        this.sub = this.router.events.subscribe((e: Event) => {
-            if (e instanceof NavigationEnd) {
-                const url = '/' + this.activatedRoute.snapshot.url.join('/');
-                const reg = new RegExp('^' + url);
-                console.log(e.url);
-                if (reg.test(e.url) && parent) {
-                    console.log(true)
-                    // parent.postMessage(data, '*');
-                }
-            }
-        });
-    }
-
-    ngOnDestroy() {
-        this.sub.unsubscribe();
     }
 }
