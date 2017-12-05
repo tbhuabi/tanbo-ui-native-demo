@@ -84,24 +84,26 @@ module.exports = {
                             return [require('autoprefixer')];
                         }
                     }
-                }, `${cssConfig.language ? cssConfig.language + '-loader?sourceMap' : ''}`]
-            }) : ['style-loader', 'css-loader', {
+                }].concat(`${cssConfig.language ? cssConfig.language + '-loader' : ''}`)
+            }) : ['style-loader', 'css-loader?sourceMap', {
                 loader: 'postcss-loader',
                 options: {
                     plugins() {
                         return [require('autoprefixer')];
-                    }
+                    },
+                    sourceMap: true
                 }
             }].concat(`${cssConfig.language ? cssConfig.language + '-loader?sourceMap' : ''}`)
         }, {
             test: cssTest(cssConfig.language),
             exclude: publicPaths,
-            use: ['to-string-loader', 'css-loader', {
+            use: ['to-string-loader', 'css-loader?sourceMap', {
                 loader: 'postcss-loader',
                 options: {
                     plugins() {
                         return [require('autoprefixer')];
-                    }
+                    },
+                    sourceMap: true
                 }
             }, `${cssConfig.language ? cssConfig.language + '-loader?sourceMap' : ''}`]
         }]
@@ -116,6 +118,7 @@ module.exports = {
                 let order2 = order.indexOf(m.names[0]);
                 return order1 - order2;
             }
-        })
+        }),
+        new webpack.ContextReplacementPlugin(/angular(\\|\/)core/, globalConfig.appPath)
     ]
 };

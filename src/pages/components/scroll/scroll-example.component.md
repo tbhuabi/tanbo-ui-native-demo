@@ -58,6 +58,7 @@ export class ScrollExampleComponent {
 
 | 输入属性名 | 输入类型  | 说明    |
 | --        | --        | --        |
+| `openInfinite`      | `boolean`   | 是否打开上拉加载功能。 |
 | `openRefresh`      | `boolean`   | 是否打开下拉刷新功能。 |
 | `doRefreshDistance`  | `number`   | 触发下拉刷新的高度临界值，默认为 `60`。 |
 | `doLoadingDistance`  | `number`   | 触发上拉加载的高度临界值，默认为 `600`。 |
