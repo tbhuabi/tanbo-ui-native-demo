@@ -37,9 +37,9 @@ module.exports = {
                 }
             }]
         }, {
-            test: /\.ts$/,
+            test: /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/,
             use: isProduction ?
-                ['ng-router-loader', 'awesome-typescript-loader', 'angular2-template-loader'] :
+                ['@ngtools/webpack'] :
                 ['ng-router-loader', 'awesome-typescript-loader', 'angular2-template-loader', './config/ng-hot-replacement-loader']
         }, {
             test: /\.md$/,
@@ -62,7 +62,7 @@ module.exports = {
                     limit: 10000,
                     name: path.posix.join(globalConfig.staticPublicPath, `img/[name]${isProduction ? '.[hash]' : ''}.[ext]`)
                 }
-            }]
+            }],
         }, {
             test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
             use: [{
@@ -71,7 +71,7 @@ module.exports = {
                     limit: 10000,
                     name: path.posix.join(globalConfig.staticPublicPath, `fonts/[name]${isProduction ? '.[hash]' : ''}.[ext]`)
                 }
-            }]
+            }],
         }, {
             test: cssTest(cssConfig.language),
             include: publicPaths,
