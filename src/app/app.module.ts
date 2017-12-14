@@ -44,7 +44,7 @@ import { ModelValidatorExampleComponent } from '../pages/forms/model-validator/m
         BrowserAnimationsModule,
         UIFormsModule,
         UIDirectivesModule,
-        UIComponentsModule,
+        UIComponentsModule.forRoot(),
         FormsModule,
         routing
     ],
