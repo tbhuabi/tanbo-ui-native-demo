@@ -33,6 +33,9 @@ export class AppComponent implements AfterViewInit {
         const parent = window.parent;
         if (parent && parent !== window) {
             this.parent = parent;
+            const style = document.createElement('style');
+            style.innerHTML = 'ui-header{padding-top: 44px;}';
+            document.querySelector('head').appendChild(style);
             parent.postMessage('loaded', '*');
         }
     }
