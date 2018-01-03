@@ -10,10 +10,22 @@
         <h3>不同风格的 Range</h3>
         <p>
           <ui-input class="primary" type="range"></ui-input>
-          <ui-input class="info" type="range"></ui-input>
-          <ui-input class="success" type="range"></ui-input>
-          <ui-input class="danger" type="range"></ui-input>
-          <ui-input class="warning" type="range"></ui-input>
+        </p>
+        <h3>弹出进度</h3>
+        <p>
+          <ui-input [showProgress]="true" class="info" type="range"></ui-input>
+        </p>
+        <h3>设置步长</h3>
+        <p>
+          <ui-input [step]="5" [showProgress]="true" class="success" type="range"></ui-input>
+        </p>
+        <h3>设置最小值</h3>
+        <p>
+          <ui-input [min]="20" [showProgress]="true" class="danger" type="range"></ui-input>
+        </p>
+        <h3>设置最大值</h3>
+        <p>
+          <ui-input [max]="60" [showProgress]="true" class="warning" type="range"></ui-input>
         </p>
         <h3>当前的拖动的进度为{{progress}}</h3>
         <p>

@@ -23,3 +23,4 @@
 | --        | --        | --        |
 | `initIndex`  | `number`   | 从哪一张开始轮播。 |
 | `speed`  | `number`   | 轮播的间隔时间，默认为 `2000`。 |
+| `steps`  | `number`   | 动画帧数。 |

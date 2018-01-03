@@ -13,6 +13,7 @@
 | `max`     | `number`   | 可选的最大值，默认为100  |
 | `min`     | `string`   | 可选的最小值，默认为0  |
 | `step`     | `string`   | 步长，默认为1  |
+| `showProgress`     | `boolean`   | 在拖动的时候是否弹出进度  |
 
 ### 输出事件 @Output()
 

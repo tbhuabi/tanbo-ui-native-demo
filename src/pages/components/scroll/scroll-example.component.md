@@ -21,6 +21,7 @@ import { Component } from '@angular/core';
               (refresh)="refresh($event)" 
               (infinite)="infinite($event)" 
               [openRefresh]="true"
+              [openInfinite]="true"
               [doRefreshDistance]="60"
               [doLoadingDistance]="600">
               <!--这里是内容-->
