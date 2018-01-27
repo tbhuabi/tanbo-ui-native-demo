@@ -6,13 +6,10 @@
       </ui-navbar>
     </ui-header>
     <ui-content>
-      <ui-refresher [progress]="progress"></ui-refresher>
+      <ui-refresher color="#2d8cf0">刷新成功!</ui-refresher>
       <ui-scroll class="container"
                  [openRefresh]="true"
-                 [openInfinite]="true"
-                 (dragging)="dragging($event)"
-                 (infinite)="infinite($event)"
-                 (refresh)="refresh($event)">
+                 [openInfinite]="true">
         <div><strong>下拉的距离为{{progress}}像素</strong></div>
         <p *ngFor="let item of list; let i = index">{{i}}---{{item}}</p>
       </ui-scroll>

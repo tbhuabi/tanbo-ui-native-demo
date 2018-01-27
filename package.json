@@ -37,7 +37,7 @@
     "core-js": "2.5.1",
     "normalize.css": "7.0.0",
     "rxjs": "5.5.2",
-    "tanbo-ui-native": "^3.0.8",
+    "tanbo-ui-native": "^3.2.5",
     "zone.js": "0.8.12"
   },
   "devDependencies": {

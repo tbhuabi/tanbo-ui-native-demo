@@ -1,17 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { PullDownRefreshController, PullUpLoadController } from 'tanbo-ui-native';
+import { Subscription } from 'rxjs';
 
 @Component({
     templateUrl: './refresh-example.component.html',
     styleUrls: ['./refresh-example.component.scss']
 })
-export class RefreshExampleComponent implements OnInit {
+export class RefreshExampleComponent implements OnInit, OnDestroy {
     progress: number = 0;
 
     list: Array<number> = [];
 
     private index: number = 0;
+    private subs: Array<Subscription> = [];
+
+    constructor(private pullDownRefreshController: PullDownRefreshController,
+                private pullUpLoadController: PullUpLoadController) {
+    }
 
     ngOnInit() {
+
+        this.subs.push(this.pullDownRefreshController.onRefresh.subscribe(() => {
+            this.refresh();
+        }));
+
+        this.subs.push(this.pullUpLoadController.onLoading.subscribe(() => {
+            this.infinite();
+        }));
+
         // 从服务端获取数据
         setTimeout(() => {
             for (let i = 0; i < 30; i++) {
@@ -21,11 +37,15 @@ export class RefreshExampleComponent implements OnInit {
         }, 300);
     }
 
+    ngOnDestroy() {
+        this.subs.forEach(item => item.unsubscribe());
+    }
+
     dragging(progress: number) {
         this.progress = progress;
     }
 
-    refresh(fn: () => void) {
+    refresh() {
         // 用户触发了下拉刷新
         setTimeout(() => {
             this.list = [];
@@ -34,11 +54,11 @@ export class RefreshExampleComponent implements OnInit {
                 this.index = i;
             }
             // 刷新完成了
-            fn();
+            this.pullDownRefreshController.refreshEnd();
         }, 3000);
     }
 
-    infinite(fn: () => void) {
+    infinite() {
         // 用户触发了下拉加载，从服务端获取更多数据
         setTimeout(() => {
             let min = this.index;
@@ -48,7 +68,7 @@ export class RefreshExampleComponent implements OnInit {
                 this.index = min;
             }
             // 加载完成了
-            fn();
+            this.pullUpLoadController.loaded();
         }, 3000);
     }
 }

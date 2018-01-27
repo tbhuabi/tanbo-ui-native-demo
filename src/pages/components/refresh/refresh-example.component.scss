@@ -1,7 +1,13 @@
+@import "../../../assets/scss/varibles";
+
 ui-content {
     background: #ccc;
 }
 
 ui-scroll {
     background-color: #fff;
+}
+
+ui-refresher {
+    background-color: $color-lighter;
 }
