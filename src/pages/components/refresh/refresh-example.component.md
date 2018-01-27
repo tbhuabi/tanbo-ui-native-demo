@@ -7,7 +7,4 @@
 
 | 输入属性名 | 输入类型  | 说明    |
 | --        | --        | --        |
-| `progress`      | `number`   | 下拉的进度 |
-| `threshold`      | `number`   | 触发刷新事件的临界值 |
-| `startThreshold`      | `number`   | 进度条开始绘制的的临界值 |
-| `progressColor`      | `string`   | 进度条颜色，如： `#f00`, `rgb(255, 0, 0)`。 |
+| `color`      | `string`   | 进度条颜色，如： `#f00`, `rgb(255, 0, 0)`。 |
