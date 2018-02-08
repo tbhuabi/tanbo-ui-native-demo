@@ -19,6 +19,9 @@ export class RefreshExampleComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
+        this.subs.push(this.pullDownRefreshController.onStateChange.subscribe(n => {
+            this.progress = n;
+        }));
 
         this.subs.push(this.pullDownRefreshController.onRefresh.subscribe(() => {
             this.refresh();
