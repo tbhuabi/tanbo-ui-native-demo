@@ -5,6 +5,9 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { UIComponentsModule, UIFormsModule, UIDirectivesModule } from 'tanbo-ui-native';
 
 import { AppComponent } from './app';
+import { HomeComponent } from '../pages/home/home.component';
+import { IntroComponent } from '../pages/intro/intro.component';
+import { StartComponent } from '../pages/start/start.component';
 import { DocLoaderComponent } from '../components/doc-loader/doc-loader.component';
 import { routing } from './app.routing';
 
@@ -50,6 +53,9 @@ import { ModelValidatorExampleComponent } from '../pages/forms/model-validator/m
     ],
     declarations: [
         AppComponent,
+        HomeComponent,
+        IntroComponent,
+        StartComponent,
         DocLoaderComponent,
 
         ActionSheetExampleComponent,

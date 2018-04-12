@@ -1,6 +1,9 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { HomeComponent } from '../pages/home/home.component';
+import { IntroComponent } from '../pages/intro/intro.component';
+import { StartComponent } from '../pages/start/start.component';
 import { ActionSheetExampleComponent } from '../pages/components/action-sheet/action-sheet-example.component';
 import { AlertExampleComponent } from '../pages/components/alert/alert-example.component';
 import { ConfirmExampleComponent } from '../pages/components/confirm/confirm-example.component';
@@ -32,6 +35,15 @@ import {
 } from '../pages/directives/stop-propagation/stop-propagation-example.component';
 
 const appRoutes: Routes = [{
+    path: 'home',
+    component: HomeComponent
+}, {
+    path: 'intro',
+    component: IntroComponent
+}, {
+    path: 'start',
+    component: StartComponent
+}, {
     path: 'action-sheet',
     component: ActionSheetExampleComponent,
     data: {
@@ -216,5 +228,9 @@ const appRoutes: Routes = [{
         html: require('!!raw-loader!../pages/forms/model-validator/model-validator-example.component.html'),
         doc: require('../pages/forms/model-validator/model-validator-example.component.md')
     }
+}, {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
 }];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
