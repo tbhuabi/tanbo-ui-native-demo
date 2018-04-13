@@ -1,0 +1,58 @@
+<ui-page>
+  <ui-header>
+    <ui-navbar>
+      <ui-back>首页</ui-back>
+      <ui-title>Radio</ui-title>
+    </ui-navbar>
+  </ui-header>
+  <ui-content>
+    <div class="container">
+      <h3>不同风格的 Radio</h3>
+      <p>
+        <ui-input class="primary" type="radio"></ui-input>
+        <ui-input class="info" type="radio"></ui-input>
+        <ui-input class="danger" type="radio"></ui-input>
+        <ui-input class="warning" type="radio"></ui-input>
+        <ui-input class="success" type="radio"></ui-input>
+      </p>
+      <p style="font-size: 30px;">
+        <ui-input class="primary" type="radio"></ui-input>
+        <ui-input class="info" type="radio"></ui-input>
+        <ui-input class="danger" type="radio"></ui-input>
+        <ui-input class="warning" type="radio"></ui-input>
+        <ui-input class="success" type="radio"></ui-input>
+      </p>
+      <h3>包含在 label 内的</h3>
+      <p>选中的值为{{r0}}</p>
+      <p>
+        <label>
+          <ui-input [(ngModel)]="r0" type="radio" name="name1" value="a"></ui-input>
+          选项1</label>
+      </p>
+      <p>
+        <label>
+          <ui-input [(ngModel)]="r0" type="radio" name="name1" value="b"></ui-input>
+          选项2</label>
+      </p>
+      <p>
+        <label>
+          <ui-input [(ngModel)]="r0" type="radio" name="name1" value="c"></ui-input>
+          选项3</label>
+      </p>
+      <h3>在 label 外的</h3>
+      <p>选中的值为{{r1}}</p>
+      <p>
+        <label for="id1">选项1</label>
+        <ui-input [(ngModel)]="r1" forId="id1" type="radio" name="name2" value="1"></ui-input>
+      </p>
+      <p>
+        <label for="id2">选项2</label>
+        <ui-input [(ngModel)]="r1" forId="id2" type="radio" name="name2" value="2"></ui-input>
+      </p>
+      <p>
+        <label for="id3">选项3</label>
+        <ui-input [(ngModel)]="r1" forId="id3" type="radio" name="name2" value="3"></ui-input>
+      </p>
+    </div>
+  </ui-content>
+</ui-page>

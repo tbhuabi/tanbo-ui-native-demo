@@ -7,7 +7,7 @@ const app = express();
 
 const globalConfig = require('../global.config');
 
-const appPort = '3390';
+const appPort = '3389';
 const appBasePath = path.resolve(__dirname, '../dist/');
 
 
@@ -17,4 +17,10 @@ app.use(historyApiFallback({}));
 app.use(express.static(appBasePath));
 app.use(favicon('/favicon.ico'));
 
-app.listen(appPort);
+app.listen(appPort, globalConfig.ip, error => {
+    if (error) {
+        console.log(error);
+        return;
+    }
+    open('http://' + globalConfig.ip + ':' + appPort);
+});

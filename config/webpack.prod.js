@@ -9,7 +9,7 @@ const globalConfig = require('../global.config');
 const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 
 module.exports = webpackMerge(commonConfig, {
-    // devtool: 'source-map',
+    devtool: 'source-map',
     output: {
         path: globalConfig.buildPath,
         publicPath: globalConfig.onlinePublishPathPrefix,
@@ -29,6 +29,17 @@ module.exports = webpackMerge(commonConfig, {
         new webpack.DefinePlugin({
             'process.env': {
                 'ENV': JSON.stringify(ENV)
+            }
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
+            beautify: false,
+            comments: false,
+            compress: {
+                warnings: false,
+                drop_console: true,
+                collapse_vars: true,
+                reduce_vars: true,
             }
         })
     ]
