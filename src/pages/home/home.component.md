@@ -40,6 +40,7 @@ tanbo-ui-native 主要分为三个模块，分别是 `UIComponentsModule`、`UID
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { UIComponentsModule, UIDirectivesModule, UIFormsModule } from 'tanbo-ui-native';
 
@@ -49,6 +50,7 @@ import { AppComponent } from './app.component';
     imports: [
         UIComponentsModule.forRoot(), // 如果是异步模块，如路由模块，请调用 `forChild()` 方法
         UIDirectivesModule,
+        BrowserAnimationsModule,
         UIFormsModule, // UIFormsModule 一定要写在 FormsModule 之前，否则会导致部分校验指令不能正常工作
         BrowserModule,
         FormsModule

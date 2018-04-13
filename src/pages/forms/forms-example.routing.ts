@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { SendDocService } from '../../app/send-doc.service';
 import { ButtonExampleComponent } from './components/button/button-example.component';
 import { CheckboxExampleComponent } from './components/checkbox/checkbox-example.component';
+import { PickerExampleComponent } from './components/picker/picker-example.component';
 import { RadioExampleComponent } from './components/radio/radio-example.component';
 import { RangeExampleComponent } from './components/range/range-example.component';
 import { SelectExampleComponent } from './components/select/select-example.component';
@@ -26,6 +27,16 @@ export const routes: Routes = [{
         ts: require('!!raw-loader!./components/checkbox/checkbox-example.component'),
         html: require('!!raw-loader!./components/checkbox/checkbox-example.component.html'),
         doc: require('./components/checkbox/checkbox-example.component.md')
+    }
+}, {
+    path: 'picker',
+    component: PickerExampleComponent,
+    canActivate: [SendDocService],
+    data: {
+        ts: require('!!raw-loader!./components/picker/picker-example.component'),
+        html: require('!!raw-loader!./components/picker/picker-example.component.html'),
+        css: require('!!raw-loader!./components/picker/picker-example.component.scss'),
+        doc: require('./components/picker/picker-example.component.md')
     }
 }, {
     path: 'radio',

@@ -9,6 +9,7 @@ import { routes } from './forms-example.routing';
 import { ButtonExampleComponent } from './components/button/button-example.component';
 import { CheckboxExampleComponent } from './components/checkbox/checkbox-example.component';
 import { RadioExampleComponent } from './components/radio/radio-example.component';
+import { PickerExampleComponent } from './components/picker/picker-example.component';
 import { RangeExampleComponent } from './components/range/range-example.component';
 import { SelectExampleComponent } from './components/select/select-example.component';
 import { SwitchExampleComponent } from './components/switch/switch-example.component';
@@ -27,6 +28,7 @@ import { ModelValidatorExampleComponent } from './components/model-validator/mod
         ButtonExampleComponent,
         CheckboxExampleComponent,
         RadioExampleComponent,
+        PickerExampleComponent,
         RangeExampleComponent,
         SelectExampleComponent,
         SwitchExampleComponent,
