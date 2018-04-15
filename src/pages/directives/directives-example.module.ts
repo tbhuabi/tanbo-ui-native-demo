@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { UIComponentsModule } from 'tanbo-ui-native';
+import { UIComponentsModule, UIDirectivesModule } from 'tanbo-ui-native';
 
 import { routes } from './directives-example.routing';
 import { StopPropagationExampleComponent } from './components/stop-propagation/stop-propagation-example.component';
@@ -8,7 +8,8 @@ import { StopPropagationExampleComponent } from './components/stop-propagation/s
 @NgModule({
     imports: [
         RouterModule.forChild(routes),
-        UIComponentsModule
+        UIComponentsModule,
+        UIDirectivesModule
     ],
     declarations: [
         StopPropagationExampleComponent
