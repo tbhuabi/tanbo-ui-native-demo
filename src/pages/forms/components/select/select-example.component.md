@@ -6,6 +6,7 @@
 | `disabled`     | `string` / `boolean`   | 是否禁用当前控件  |
 | `readonly`     | `string` / `boolean`   | 是否设置当前控件为只读  |
 | `selectedIndex`     | `number`   | 初始选中哪一项，默认为 0  |
+| `cancelText`     | `string`   | 取消按扭的文字  |
 
 ### 输出事件 @Output()
 

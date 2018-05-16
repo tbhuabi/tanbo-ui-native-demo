@@ -1,0 +1,22 @@
+<ui-page>
+  <ui-header>
+    <ui-navbar>
+      <ui-back>首页</ui-back>
+      <ui-title>Segment</ui-title>
+    </ui-navbar>
+  </ui-header>
+  <ui-content>
+    <div class="top">
+      <ui-segment [(ngModel)]="type">
+        <ui-segment-button value="1">一</ui-segment-button>
+        <ui-segment-button value="2">二</ui-segment-button>
+        <ui-segment-button value="3">三</ui-segment-button>
+      </ui-segment>
+    </div>
+    <ui-scroll [ngSwitch]="type">
+      <div *ngSwitchCase="'1'" style="background-color: gray;">第一页</div>
+      <div *ngSwitchCase="'2'" style="background-color: antiquewhite;">第二页</div>
+      <div *ngSwitchCase="'3'" style="background-color: darkcyan;">第三页</div>
+    </ui-scroll>
+  </ui-content>
+</ui-page>

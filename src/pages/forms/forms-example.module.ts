@@ -8,9 +8,11 @@ import { routes } from './forms-example.routing';
 
 import { ButtonExampleComponent } from './components/button/button-example.component';
 import { CheckboxExampleComponent } from './components/checkbox/checkbox-example.component';
+import { DateExampleComponent } from './components/date/date-example.component';
 import { RadioExampleComponent } from './components/radio/radio-example.component';
 import { PickerExampleComponent } from './components/picker/picker-example.component';
 import { RangeExampleComponent } from './components/range/range-example.component';
+import { SegmentExampleComponent } from './components/segment/segment-example.component';
 import { SelectExampleComponent } from './components/select/select-example.component';
 import { SwitchExampleComponent } from './components/switch/switch-example.component';
 import { FormValidatorExampleComponent } from './components/form-validator/form-validator-example.component';
@@ -27,9 +29,11 @@ import { ModelValidatorExampleComponent } from './components/model-validator/mod
     declarations: [
         ButtonExampleComponent,
         CheckboxExampleComponent,
+        DateExampleComponent,
         RadioExampleComponent,
         PickerExampleComponent,
         RangeExampleComponent,
+        SegmentExampleComponent,
         SelectExampleComponent,
         SwitchExampleComponent,
         FormValidatorExampleComponent,
