@@ -18,7 +18,7 @@
       <ui-scroll-tab-button>tab9</ui-scroll-tab-button>
       <ui-scroll-tab-button>tab10</ui-scroll-tab-button>
     </ui-scroll-tab>
-    <ui-collection [index]="viewIndex" (sliding)="setTabIndex($event)">
+    <ui-collection [index]="viewIndex" (slidingFinish)="setTabIndex($event)">
       <ui-collection-item>第一页</ui-collection-item>
       <ui-collection-item>第二页</ui-collection-item>
       <ui-collection-item>第三页</ui-collection-item>
