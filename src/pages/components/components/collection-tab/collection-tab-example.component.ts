@@ -5,15 +5,14 @@ import { Component } from '@angular/core';
     styleUrls: ['./collection-tab-example.component.scss']
 })
 export class CollectionTabExampleComponent {
-    left: number = 0;
+    viewIndex: number = 0;
+    tabIndex: number = 0;
 
-    index: number = 0;
-
-    updateLine(progress: number) {
-        this.left = progress * 100;
+    setViewIndex(n: number) {
+        this.viewIndex = n;
     }
 
-    setTabIndex(index: number) {
-        this.index = index;
+    setTabIndex(n: number) {
+        this.tabIndex = n;
     }
 }

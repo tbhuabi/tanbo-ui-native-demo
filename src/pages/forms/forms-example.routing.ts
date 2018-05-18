@@ -74,6 +74,7 @@ export const routes: Routes = [{
     data: {
         ts: require('!!raw-loader!./components/segment/segment-example.component'),
         html: require('!!raw-loader!./components/segment/segment-example.component.html'),
+        css: require('!!raw-loader!./components/segment/segment-example.component.scss'),
         doc: require('./components/segment/segment-example.component.md')
     }
 }, {

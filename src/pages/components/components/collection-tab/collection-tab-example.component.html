@@ -6,20 +6,29 @@
     </ui-navbar>
   </ui-header>
   <ui-content>
-    <div class="tabs">
-      <div class="btns">
-        <button type="button" (click)="setTabIndex(0)">tab1</button>
-        <button type="button" (click)="setTabIndex(1)">tab2</button>
-        <button type="button" (click)="setTabIndex(2)">tab3</button>
-        <button type="button" (click)="setTabIndex(3)">tab4</button>
-      </div>
-      <div class="tab-line" [ngStyle]="{transform: 'translateX('+left+'%)'}"></div>
-    </div>
-    <ui-collection [index]="index" (sliding)="updateLine($event)" (slidingFinish)="updateLine($event)">
+    <ui-scroll-tab [index]="tabIndex" (change)="setViewIndex($event)">
+      <ui-scroll-tab-button>tab1</ui-scroll-tab-button>
+      <ui-scroll-tab-button>tab2</ui-scroll-tab-button>
+      <ui-scroll-tab-button>tab3</ui-scroll-tab-button>
+      <ui-scroll-tab-button>tab4</ui-scroll-tab-button>
+      <ui-scroll-tab-button>tab5</ui-scroll-tab-button>
+      <ui-scroll-tab-button>tab6</ui-scroll-tab-button>
+      <ui-scroll-tab-button>tab7</ui-scroll-tab-button>
+      <ui-scroll-tab-button>tab8</ui-scroll-tab-button>
+      <ui-scroll-tab-button>tab9</ui-scroll-tab-button>
+      <ui-scroll-tab-button>tab10</ui-scroll-tab-button>
+    </ui-scroll-tab>
+    <ui-collection [index]="viewIndex" (sliding)="setTabIndex($event)">
       <ui-collection-item>第一页</ui-collection-item>
       <ui-collection-item>第二页</ui-collection-item>
       <ui-collection-item>第三页</ui-collection-item>
       <ui-collection-item>第四页</ui-collection-item>
+      <ui-collection-item>第五页</ui-collection-item>
+      <ui-collection-item>第六页</ui-collection-item>
+      <ui-collection-item>第七页</ui-collection-item>
+      <ui-collection-item>第八页</ui-collection-item>
+      <ui-collection-item>第九页</ui-collection-item>
+      <ui-collection-item>第十页</ui-collection-item>
     </ui-collection>
   </ui-content>
 </ui-page>

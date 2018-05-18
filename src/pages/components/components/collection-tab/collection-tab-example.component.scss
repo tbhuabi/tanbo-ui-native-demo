@@ -1,33 +1,7 @@
 @import "../../../../assets/scss/varibles";
 
-.tabs {
-    height: 40px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
-    position: relative;
-}
-
-.tab-line {
-    width: 25%;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: $color-primary;
-}
-
-.btns {
-    display: flex;
-    button {
-        flex: 1;
-        height: 40px;
-        background: none;
-        border: none;
-    }
-}
-
 ui-collection {
     top: 40px;
-    color: #fff;
     ui-collection-item {
         padding: 15px;
         &:nth-child(1) {
