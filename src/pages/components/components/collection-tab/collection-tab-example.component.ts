@@ -6,13 +6,8 @@ import { Component } from '@angular/core';
 })
 export class CollectionTabExampleComponent {
     viewIndex: number = 0;
-    tabIndex: number = 0;
 
-    setViewIndex(n: number) {
+    setIndex(n: number) {
         this.viewIndex = n;
-    }
-
-    setTabIndex(n: number) {
-        this.tabIndex = n;
     }
 }
