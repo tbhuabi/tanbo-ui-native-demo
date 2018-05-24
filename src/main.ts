@@ -4,6 +4,7 @@ import { AppModule } from './app/app.module';
 
 import 'normalize.css';
 import './assets/scss/index.scss';
+import './assets/icomoon/style.css';
 
 if (process.env.ENV === 'production') {
     enableProdMode();
