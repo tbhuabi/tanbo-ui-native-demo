@@ -10,7 +10,7 @@ export class RefreshExampleComponent implements OnInit, OnDestroy {
     progress: number = 0;
 
     list: Array<number> = [];
-
+    isLoaded: boolean = false;
     private index: number = 0;
     private subs: Array<Subscription> = [];
 
@@ -28,6 +28,7 @@ export class RefreshExampleComponent implements OnInit, OnDestroy {
         }));
 
         this.subs.push(this.pullUpLoadController.onLoading.subscribe(() => {
+            this.isLoaded = false;
             this.infinite();
         }));
 
@@ -42,10 +43,6 @@ export class RefreshExampleComponent implements OnInit, OnDestroy {
 
     ngOnDestroy() {
         this.subs.forEach(item => item.unsubscribe());
-    }
-
-    dragging(progress: number) {
-        this.progress = progress;
     }
 
     refresh() {
@@ -72,6 +69,7 @@ export class RefreshExampleComponent implements OnInit, OnDestroy {
             }
             // 加载完成了
             this.pullUpLoadController.loaded();
+            this.isLoaded = true;
         }, 3000);
     }
 }

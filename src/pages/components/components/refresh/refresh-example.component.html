@@ -12,6 +12,7 @@
                [openInfinite]="true">
       <div><strong>下拉的距离为{{progress}}像素</strong></div>
       <p *ngFor="let item of list; let i = index">{{i}}---{{item}}</p>
+      <ui-loading *ngIf="!isLoaded"></ui-loading>
     </ui-scroll>
   </ui-content>
 </ui-page>
