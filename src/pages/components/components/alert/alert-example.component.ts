@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AlertController, AlertConfig } from 'tanbo-ui-native';
+import { AlertController, AlertConfig } from '@tanbo/ui-native';
 
 @Component({
     templateUrl: './alert-example.component.html'

@@ -1,19 +1,9 @@
 ### 项目起源
 
-因为我所在公司大多项目都是移动端的项目，但传统 webview 内嵌网页，在视觉和交互上和原生差异太大，而且移动端很多交互都是类似的，所以，在将近半年时间内，我花了大部分业余时间，开发了 tanbo-ui-native。
-
-这套框架封装了移动端常用的功能，如：智能的上下文转场动画、侧滑返回、上拉加载、下拉刷新等。
-
+@tanbo/ui-native 架封装了移动端常用的功能，如：智能的上下文转场动画、侧滑返回、上拉加载、下拉刷新等。
 经过大半年的开发，项目基本趋于稳定，为了防止自己遗忘，也想把这套框架分享给大家。
-
 我并不是大神，只是兴趣使然，所以，框架难免有功能不完善、设计不优雅的地方，也请有兴趣的朋友，批评指正。
 
-
-### 关于 tanbo-ui-native 和 ionic
-
-在我开发 tanbo-ui-native 之前，曾用过 ionic2 开发过两个项目，ionic 无疑是一个功能非常完善的框架，能为我们开发省不少工作量，但定制性相对差一些，并且不支持浏览器路由功能，每次改一下代码，刷新后，都会回到首页。当页面比较深的时候，无疑会让开发体验下降不少。
-
-所以我在开发之初，就设想，能不能既能支持页面跳转的转场动画，也能支持浏览器的路由功能，在只熟悉 angular 的基础上，即可很快的开发出移动端的应用。为此，我封装了路由功能，当然，你在使用过程中并不需要关心它。原来 angular 怎么配置路由，在使用 tanbo-ui-native 时，一样的使用。
 
 ### 环境准备
 
@@ -24,13 +14,18 @@
 
 #### 2、安装框架
 
+安装框架依赖
 ```bash
-npm install tanbo-ui-native --save
+npm install @tweenjs/tween.js @types/tween.js better-scroll tanbo-bezier --save
+```
+安装框架
+```bash
+npm install @tanbo/ui-native --save
 ```
 
-### 在项目中导入 tanbo-ui-native
+### 在项目中导入 @tanbo/ui-native
 
-tanbo-ui-native 主要分为三个模块，分别是 `UIComponentsModule`、`UIDirectivesModule`、`UIFormsModule`。
+@tanbo/ui-native 主要分为三个模块，分别是 `UIComponentsModule`、`UIDirectivesModule`、`UIFormsModule`。
 + `UIComponentsModule` 主要提供了 native 页面常用的 ui 组件
 + `UIDirectivesModule` 主要提供了一些常用指令
 + `UIFormsModule` 主要提供了一些表单组件，及一些表单校验的指令
@@ -42,7 +37,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { UIComponentsModule, UIDirectivesModule, UIFormsModule } from 'tanbo-ui-native';
+import { UIComponentsModule, UIDirectivesModule, UIFormsModule } from '@tanbo/ui-native';
 
 import { AppComponent } from './app.component';
 
@@ -79,23 +74,23 @@ export class AppComponent {
 ```
 
 
-### 在项目中导入 tanbo-ui-native 的样式表
+### 在项目中导入 @tanbo/ui-native 的样式表
 
-tanbo-ui-native 的样式表采用 sass 开发，你可以导入 sass 源文件，进行定制化开发，也可以直接导入已编译好的 css 文件。
+@tanbo/ui-native 的样式表采用 sass 开发，你可以导入 sass 源文件，进行定制化开发，也可以直接导入已编译好的 css 文件。
 
 在 ts 文件中导入编译好的 css 文件
 ```typescript
 // # main.ts
 // 按照 angular 项目的约定，在 main.ts 里导入全局样式表
-import 'tanbo-ui-native/bundles/tanbo-ui-native.min.css';
+import '@tanbo/ui-native/index.min.css';
 ```
 
 在 global.scss 中导入 scss 源文件和字体 css 文件，然后导入 global.scss 到 main.ts
 ```scss
 // # global.scss
-@import "~tanbo-ui-native/bundles/assets/scss/varibles";
-@import "~tanbo-ui-native/bundles/assets/scss/custom-index";
-@import "~tanbo-ui-native/bundles/assets/fonts/style.css";
+@import "~@tanbo/ui-native/assets/scss/varibles";
+@import "~@tanbo/ui-native/assets/scss/custom-index";
+@import "~@tanbo/ui-native/assets/fonts/style.css";
 ```
 ```typescript
 // # main.ts
@@ -105,7 +100,7 @@ import './global.scss';
 
 ### HTML 结构
 
-要正常使用 tanbo-ui-native 的触摸手势及路由转场动画，你的页面需要遵守以下一些约定，才能正常工作，合理的约定，并不会降低开发的灵活性，而是会大大降低出 bug 的机率。
+要正常使用 @tanbo/ui-native 的触摸手势及路由转场动画，你的页面需要遵守以下一些约定，才能正常工作，合理的约定，并不会降低开发的灵活性，而是会大大降低出 bug 的机率。
 
 ```html
 <ui-page>

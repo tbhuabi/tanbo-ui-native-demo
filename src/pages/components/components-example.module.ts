@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { UIComponentsModule } from 'tanbo-ui-native';
+import { UIComponentsModule } from '@tanbo/ui-native';
 
 import { routes } from './components-example.routing';
 

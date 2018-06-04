@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PickerCell } from 'tanbo-ui-native';
+import { PickerCell } from '@tanbo/ui-native';
 
 @Component({
     templateUrl: './picker-example.component.html',

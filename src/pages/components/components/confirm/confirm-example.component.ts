@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ConfirmController, ConfirmConfig } from 'tanbo-ui-native';
+import { ConfirmController, ConfirmConfig } from '@tanbo/ui-native';
 
 @Component({
     templateUrl: './confirm-example.component.html'

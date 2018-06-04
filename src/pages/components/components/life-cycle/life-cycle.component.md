@@ -4,7 +4,7 @@
 
 ```typescript
 import { Component } from '@angular/core';
-import { OnViewEnter } from 'tanbo-ui-native';
+import { OnViewEnter } from '@tanbo/ui-native';
 
 @Component({
     template: '<div>生命周期示例</div>'
@@ -23,7 +23,7 @@ export class ExampleComponent implements OnViewEnter {
 
 ```typescript
 import { Component } from '@angular/core';
-import { OnViewLeave } from 'tanbo-ui-native';
+import { OnViewLeave } from '@tanbo/ui-native';
 
 @Component({
     template: '<div>生命周期示例</div>'

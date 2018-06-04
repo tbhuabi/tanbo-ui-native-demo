@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { PullDownRefreshController, PullUpLoadController } from 'tanbo-ui-native';
+import { PullDownRefreshController, PullUpLoadController } from '@tanbo/ui-native';
 import { Subscription } from 'rxjs';
 
 @Component({
