@@ -7,7 +7,7 @@
   </ui-header>
   <ui-content>
     <p class="container">
-      <button class="btn btn-block primary" (click)="trigger(true)">点我弹出</button>
+      <button class="btn btn-block btn-primary" (click)="trigger(true)">点我弹出</button>
     </p>
     <ui-action-sheet [show]="isShow" (click)="trigger(false)">
       <div class="sheet-content" uiStopPropagation="click">
