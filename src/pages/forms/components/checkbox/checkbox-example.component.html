@@ -6,14 +6,14 @@
     </ui-navbar>
   </ui-header>
   <ui-content>
-    <div class="container">
+    <ui-scroll class="ui-container">
       <h3>不同风格的 Checkbox</h3>
       <p>
-        <ui-input class="primary" type="checkbox"></ui-input>
-        <ui-input class="info" type="checkbox"></ui-input>
-        <ui-input class="danger" type="checkbox"></ui-input>
-        <ui-input class="warning" type="checkbox"></ui-input>
-        <ui-input class="success" type="checkbox"></ui-input>
+        <ui-input class="ui-primary" type="checkbox"></ui-input>
+        <ui-input class="ui-info" type="checkbox"></ui-input>
+        <ui-input class="ui-danger" type="checkbox"></ui-input>
+        <ui-input class="ui-warning" type="checkbox"></ui-input>
+        <ui-input class="ui-success" type="checkbox"></ui-input>
       </p>
       <h3>包含在 label 内的</h3>
       <p>
@@ -44,6 +44,6 @@
         <label for="id3">选项6为{{c6}}</label>
         <ui-input [(ngModel)]="c6" forId="id3" type="checkbox"></ui-input>
       </p>
-    </div>
+    </ui-scroll>
   </ui-content>
 </ui-page>

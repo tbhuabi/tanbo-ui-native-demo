@@ -6,8 +6,8 @@
     </ui-navbar>
   </ui-header>
   <ui-content>
-    <p class="container">
-      <button class="btn btn-block btn-primary" (click)="trigger(true)">点我弹出</button>
+    <p class="ui-container">
+      <button class="ui-btn ui-btn-block ui-btn-primary" (click)="trigger(true)">点我弹出</button>
     </p>
     <ui-action-sheet [show]="isShow" (click)="trigger(false)">
       <div class="sheet-content" uiStopPropagation="click">

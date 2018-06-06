@@ -6,31 +6,31 @@
     </ui-navbar>
   </ui-header>
   <ui-content>
-    <div class="container">
+    <ui-scroll class="ui-container">
       <h3>不同风格的 Range</h3>
       <p>
-        <ui-input class="primary" type="range"></ui-input>
+        <ui-input class="ui-primary" type="range"></ui-input>
       </p>
       <h3>弹出进度</h3>
       <p>
-        <ui-input [showProgress]="true" class="info" type="range"></ui-input>
+        <ui-input [showProgress]="true" class="ui-info" type="range"></ui-input>
       </p>
       <h3>设置步长</h3>
       <p>
-        <ui-input [step]="5" [showProgress]="true" class="success" type="range"></ui-input>
+        <ui-input [step]="5" [showProgress]="true" class="ui-success" type="range"></ui-input>
       </p>
       <h3>设置最小值</h3>
       <p>
-        <ui-input [min]="20" [showProgress]="true" class="danger" type="range"></ui-input>
+        <ui-input [min]="20" [showProgress]="true" class="ui-danger" type="range"></ui-input>
       </p>
       <h3>设置最大值</h3>
       <p>
-        <ui-input [max]="60" [showProgress]="true" class="warning" type="range"></ui-input>
+        <ui-input [max]="60" [showProgress]="true" class="ui-warning" type="range"></ui-input>
       </p>
       <h3>当前的拖动的进度为{{progress}}</h3>
       <p>
         <ui-input type="range" [(ngModel)]="progress"></ui-input>
       </p>
-    </div>
+    </ui-scroll>
   </ui-content>
 </ui-page>

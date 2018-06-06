@@ -26,7 +26,7 @@ import { TabChild4Component } from './components/tab/tab-child4/tab-child4.compo
 @NgModule({
     imports: [
         RouterModule.forChild(routes),
-        UIComponentsModule.forChild(),
+        UIComponentsModule,
         CommonModule
     ],
     declarations: [

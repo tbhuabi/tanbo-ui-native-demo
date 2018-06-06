@@ -6,14 +6,14 @@
     </ui-navbar>
   </ui-header>
   <ui-content>
-    <div class="container">
+    <ui-scroll class="ui-container">
       <h3>不同风格的 Radio</h3>
       <p>
-        <ui-input class="primary" type="radio"></ui-input>
-        <ui-input class="info" type="radio"></ui-input>
-        <ui-input class="danger" type="radio"></ui-input>
-        <ui-input class="warning" type="radio"></ui-input>
-        <ui-input class="success" type="radio"></ui-input>
+        <ui-input class="ui-primary" type="radio"></ui-input>
+        <ui-input class="ui-info" type="radio"></ui-input>
+        <ui-input class="ui-danger" type="radio"></ui-input>
+        <ui-input class="ui-warning" type="radio"></ui-input>
+        <ui-input class="ui-success" type="radio"></ui-input>
       </p>
       <h3>包含在 label 内的</h3>
       <p>选中的值为{{r0}}</p>
@@ -46,6 +46,6 @@
         <label for="id3">选项3</label>
         <ui-input [(ngModel)]="r1" forId="id3" type="radio" name="name2" value="3"></ui-input>
       </p>
-    </div>
+    </ui-scroll>
   </ui-content>
 </ui-page>

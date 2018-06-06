@@ -9,15 +9,16 @@
     <ui-collection
             (sliding)="sliding($event)"
             (slidingFinish)="slidingFinish($event)"
+            [fill]="true"
             [vertical]="false"
             [index]="0">
-      <ui-collection-item class="container" style="background: green; color: #fff">
+      <ui-collection-item class="ui-container" style="background: green; color: #fff">
         <p>第一页</p>
       </ui-collection-item>
-      <ui-collection-item class="container" style="background: gray; color: #fff">
+      <ui-collection-item class="ui-container" style="background: gray; color: #fff">
         <p>第二页</p>
       </ui-collection-item>
-      <ui-collection-item class="container" style="background: palevioletred; color: #fff">
+      <ui-collection-item class="ui-container" style="background: palevioletred; color: #fff">
         <p>第三页</p>
       </ui-collection-item>
     </ui-collection>
