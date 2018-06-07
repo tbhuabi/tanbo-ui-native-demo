@@ -14,6 +14,7 @@
 
 | 输入属性名 | 输入类型  | 说明    |
 | --        | --        | --        |
+| `fill`      | `boolean`   | 用于控制`ui-collection`是否填充整个容器，默认为 `false`，即普通的流式布局|
 | `vertical`      | `boolean`   | 用于控制`ui-collection`是否垂直滚动，默认为水平滚动 |
 | `index`      | `number`   | 用于控制`ui-collection`是显示第几张，设置时注册边际值。<br> 即：当 `ui-collection-item` 有3个时，`index` 的可选值为 `0`， `1`， `2` |
 
