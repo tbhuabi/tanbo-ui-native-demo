@@ -7,6 +7,7 @@ import { AlertExampleComponent } from './components/alert/alert-example.componen
 import { CollectionExampleComponent } from './components/collection/collection-example.component';
 import { CollectionTabExampleComponent } from './components/collection-tab/collection-tab-example.component';
 import { ConfirmExampleComponent } from './components/confirm/confirm-example.component';
+import { FixedBarExampleComponent } from './components/fixed-bar/fixed-bar-example.component';
 import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 import { ListExampleComponent } from './components/list/list-example.component';
 import { ScrollExampleComponent } from './components/scroll/scroll-example.component';
@@ -66,6 +67,16 @@ export const routes: Routes = [{
         ts: require('!!raw-loader!./components/confirm/confirm-example.component'),
         html: require('!!raw-loader!./components/confirm/confirm-example.component.html'),
         doc: require('./components/confirm/confirm-example.component.md')
+    }
+}, {
+    path: 'fixed-bar',
+    component: FixedBarExampleComponent,
+    canActivate: [SendDocService],
+    data: {
+        ts: require('!!raw-loader!./components/fixed-bar/fixed-bar-example.component'),
+        html: require('!!raw-loader!./components/fixed-bar/fixed-bar-example.component.html'),
+        css: require('!!raw-loader!./components/fixed-bar/fixed-bar-example.component.scss'),
+        doc: require('./components/fixed-bar/fixed-bar-example.component.md')
     }
 }, {
     path: 'life-cycle',

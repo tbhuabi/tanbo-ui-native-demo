@@ -10,6 +10,7 @@ import { AlertExampleComponent } from './components/alert/alert-example.componen
 import { CollectionExampleComponent } from './components/collection/collection-example.component';
 import { CollectionTabExampleComponent } from './components/collection-tab/collection-tab-example.component';
 import { ConfirmExampleComponent } from './components/confirm/confirm-example.component';
+import { FixedBarExampleComponent } from './components/fixed-bar/fixed-bar-example.component';
 import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 import { ListExampleComponent } from './components/list/list-example.component';
 import { ScrollExampleComponent } from './components/scroll/scroll-example.component';
@@ -35,6 +36,7 @@ import { TabChild4Component } from './components/tab/tab-child4/tab-child4.compo
         CollectionExampleComponent,
         CollectionTabExampleComponent,
         ConfirmExampleComponent,
+        FixedBarExampleComponent,
         LifeCycleComponent,
         ListExampleComponent,
         ScrollExampleComponent,
