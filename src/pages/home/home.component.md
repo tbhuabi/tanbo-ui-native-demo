@@ -38,7 +38,7 @@ import { AppComponent } from './app.component';
 
 @NgModule({
     imports: [
-        UINativeModule.forRoot(), // 如果是异步模块，如路由模块，请调用 `forChild()` 方法
+        UINativeModule.forRoot(), // 如果是子模块或异步模块，如路由模块，则不要调用
         BrowserAnimationsModule,
         BrowserModule,
         FormsModule
