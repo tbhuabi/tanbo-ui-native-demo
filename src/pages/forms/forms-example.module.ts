@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { UIComponentsModule, UIFormsModule } from '@tanbo/ui-native';
+import { UINativeModule } from '@tanbo/ui-native';
 
 import { routes } from './forms-example.routing';
 
@@ -19,26 +19,25 @@ import { FormValidatorExampleComponent } from './components/form-validator/form-
 import { ModelValidatorExampleComponent } from './components/model-validator/model-validator-example.component';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        RouterModule.forChild(routes),
-        UIFormsModule,
-        UIComponentsModule,
-        FormsModule
-    ],
-    declarations: [
-        ButtonExampleComponent,
-        CheckboxExampleComponent,
-        DateExampleComponent,
-        RadioExampleComponent,
-        PickerExampleComponent,
-        RangeExampleComponent,
-        SegmentExampleComponent,
-        SelectExampleComponent,
-        SwitchExampleComponent,
-        FormValidatorExampleComponent,
-        ModelValidatorExampleComponent
-    ]
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    UINativeModule,
+    FormsModule
+  ],
+  declarations: [
+    ButtonExampleComponent,
+    CheckboxExampleComponent,
+    DateExampleComponent,
+    RadioExampleComponent,
+    PickerExampleComponent,
+    RangeExampleComponent,
+    SegmentExampleComponent,
+    SelectExampleComponent,
+    SwitchExampleComponent,
+    FormValidatorExampleComponent,
+    ModelValidatorExampleComponent
+  ]
 })
 
 export class FormsExampleModule {

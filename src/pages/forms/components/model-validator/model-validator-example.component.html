@@ -7,7 +7,7 @@
   </ui-header>
   <ui-content>
     <p class="ui-container">当获取验证码时，需要先校验手机号码</p>
-    <form novalidate [uiValidateForm]="form" #form="ngForm" (ngSubmit)="submit()">
+    <form novalidate [ui-validate-form]="form" #form="ngForm" (ngSubmit)="submit()">
       <ui-list>
         <ui-list-item>
           <ui-list-thumbnail>手机号码：</ui-list-thumbnail>
@@ -29,7 +29,7 @@
         <ui-list-item>
           <ui-list-inner>
             <div>
-              <button class="ui-btn ui-btn-primary" type="button" [uiValidateModel]="mobilePhone">点击获取验证码</button>
+              <button class="ui-btn ui-btn-primary" type="button" [ui-validate-model]="mobilePhone">点击获取验证码</button>
             </div>
           </ui-list-inner>
         </ui-list-item>

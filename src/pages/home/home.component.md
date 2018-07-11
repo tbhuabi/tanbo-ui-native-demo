@@ -25,11 +25,6 @@ npm install @tanbo/ui-native --save
 
 ### 在项目中导入 @tanbo/ui-native
 
-@tanbo/ui-native 主要分为三个模块，分别是 `UIComponentsModule`、`UIDirectivesModule`、`UIFormsModule`。
-+ `UIComponentsModule` 主要提供了 native 页面常用的 ui 组件
-+ `UIDirectivesModule` 主要提供了一些常用指令
-+ `UIFormsModule` 主要提供了一些表单组件，及一些表单校验的指令
-
 ```typescript
 // # app.module.ts 入口模块
 
@@ -37,16 +32,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { UIComponentsModule, UIDirectivesModule, UIFormsModule } from '@tanbo/ui-native';
+import { UINativeModule } from '@tanbo/ui-native';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
     imports: [
-        UIComponentsModule.forRoot(), // 如果是异步模块，如路由模块，请调用 `forChild()` 方法
-        UIDirectivesModule,
+        UINativeModule.forRoot(), // 如果是异步模块，如路由模块，请调用 `forChild()` 方法
         BrowserAnimationsModule,
-        UIFormsModule, // UIFormsModule 一定要写在 FormsModule 之前，否则会导致部分校验指令不能正常工作
         BrowserModule,
         FormsModule
     ],
@@ -89,7 +82,7 @@ import '@tanbo/ui-native/index.min.css';
 ```scss
 // # global.scss
 @import "~@tanbo/ui-native/assets/scss/varibles";
-@import "~@tanbo/ui-native/assets/scss/custom-index";
+@import "~@tanbo/ui-native/assets/scss/components";
 @import "~@tanbo/ui-native/assets/fonts/style.css";
 ```
 ```typescript

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { UIComponentsModule } from '@tanbo/ui-native';
+import { UINativeModule } from '@tanbo/ui-native';
 
 import { routes } from './components-example.routing';
 
@@ -25,31 +25,31 @@ import { TabChild3Component } from './components/tab/tab-child3/tab-child3.compo
 import { TabChild4Component } from './components/tab/tab-child4/tab-child4.component';
 
 @NgModule({
-    imports: [
-        RouterModule.forChild(routes),
-        UIComponentsModule,
-        CommonModule
-    ],
-    declarations: [
-        ActionSheetExampleComponent,
-        AlertExampleComponent,
-        CollectionExampleComponent,
-        CollectionTabExampleComponent,
-        ConfirmExampleComponent,
-        FixedBarExampleComponent,
-        LifeCycleComponent,
-        ListExampleComponent,
-        ScrollExampleComponent,
-        RefreshExampleComponent,
-        SlideExampleComponent,
-        RouterExampleComponent,
-        ChildComponent,
-        TabExampleComponent,
-        TabChild1Component,
-        TabChild2Component,
-        TabChild3Component,
-        TabChild4Component
-    ]
+  imports: [
+    RouterModule.forChild(routes),
+    UINativeModule,
+    CommonModule
+  ],
+  declarations: [
+    ActionSheetExampleComponent,
+    AlertExampleComponent,
+    CollectionExampleComponent,
+    CollectionTabExampleComponent,
+    ConfirmExampleComponent,
+    FixedBarExampleComponent,
+    LifeCycleComponent,
+    ListExampleComponent,
+    ScrollExampleComponent,
+    RefreshExampleComponent,
+    SlideExampleComponent,
+    RouterExampleComponent,
+    ChildComponent,
+    TabExampleComponent,
+    TabChild1Component,
+    TabChild2Component,
+    TabChild3Component,
+    TabChild4Component
+  ]
 })
 export class ComponentsExampleModule {
 }
