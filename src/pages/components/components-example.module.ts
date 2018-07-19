@@ -9,7 +9,7 @@ import { ActionSheetExampleComponent } from './components/action-sheet/action-sh
 import { AlertExampleComponent } from './components/alert/alert-example.component';
 import { CollectionExampleComponent } from './components/collection/collection-example.component';
 import { CollectionTabExampleComponent } from './components/collection-tab/collection-tab-example.component';
-import { ConfirmExampleComponent } from './components/confirm/confirm-example.component';
+import { DialogExampleComponent } from './components/dialog/dialog-example.component';
 import { FixedBarExampleComponent } from './components/fixed-bar/fixed-bar-example.component';
 import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 import { ListExampleComponent } from './components/list/list-example.component';
@@ -35,7 +35,7 @@ import { TabChild4Component } from './components/tab/tab-child4/tab-child4.compo
     AlertExampleComponent,
     CollectionExampleComponent,
     CollectionTabExampleComponent,
-    ConfirmExampleComponent,
+    DialogExampleComponent,
     FixedBarExampleComponent,
     LifeCycleComponent,
     ListExampleComponent,

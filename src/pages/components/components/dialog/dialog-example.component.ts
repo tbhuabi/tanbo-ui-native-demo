@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { DialogController, DialogConfig } from '@tanbo/ui-native';
 
 @Component({
-    templateUrl: './confirm-example.component.html'
+    templateUrl: './dialog-example.component.html'
 })
-export class ConfirmExampleComponent {
+export class DialogExampleComponent {
     constructor(private dialogController: DialogController) {
     }
 

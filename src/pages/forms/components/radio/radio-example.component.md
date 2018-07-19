@@ -17,4 +17,4 @@
 
 | 输出事件名 | 输出值（$event）  | 说明    |
 | --        | --        | --        |
-| `change` | `string`   | `$event` 为当前选中控件的 value。  |
+| `uiChange` | `string`   | `$event` 为当前选中控件的 value。  |

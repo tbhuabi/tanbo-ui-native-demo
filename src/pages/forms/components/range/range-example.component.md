@@ -19,4 +19,4 @@
 
 | 输出事件名 | 输出值（$event）  | 说明    |
 | --        | --        | --        |
-| `change` | `number`   | `$event` 为控件的 value。  |
+| `uiChange` | `number`   | `$event` 为控件的 value。  |

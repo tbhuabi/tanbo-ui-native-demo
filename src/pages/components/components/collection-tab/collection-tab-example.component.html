@@ -6,7 +6,7 @@
     </ui-navbar>
   </ui-header>
   <ui-content>
-    <ui-scroll-tab [index]="viewIndex" (change)="setIndex($event)">
+    <ui-scroll-tab [index]="viewIndex" (uiChange)="setIndex($event)">
       <ui-scroll-tab-button>tab1</ui-scroll-tab-button>
       <ui-scroll-tab-button>tab2</ui-scroll-tab-button>
       <ui-scroll-tab-button>tab3</ui-scroll-tab-button>
@@ -18,7 +18,7 @@
       <ui-scroll-tab-button>tab9</ui-scroll-tab-button>
       <ui-scroll-tab-button>tab10</ui-scroll-tab-button>
     </ui-scroll-tab>
-    <ui-collection [index]="viewIndex" [fill]="true" (slidingFinish)="setIndex($event)">
+    <ui-collection [index]="viewIndex" [fill]="true" (uiSlidingFinish)="setIndex($event)">
       <ui-collection-item>第一页</ui-collection-item>
       <ui-collection-item>第二页</ui-collection-item>
       <ui-collection-item>第三页</ui-collection-item>

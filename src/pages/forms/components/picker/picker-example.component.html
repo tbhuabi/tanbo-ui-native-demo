@@ -11,7 +11,7 @@
         <ui-list-inner>
           <div>请选择地区</div>
           <div class="ui-text-right ui-clearfix">
-            <ui-picker [data]="data" (change)="change($event)" placeholder="请选择地区">
+            <ui-picker [data]="data" (uiChange)="change($event)" placeholder="请选择地区">
               <div>{{result}}</div>
             </ui-picker>
           </div>

@@ -17,4 +17,4 @@
 ### @Output()
 | 输出属性名 | 输出值（$event）  | 说明    |
 | --        | --        | --        |
-| `change` | `number`/ `string`  | 根据 `format` 的不同，传回当前组件的 value |
+| `uiChange` | `number`/ `string`  | 根据 `format` 的不同，传回当前组件的 value |

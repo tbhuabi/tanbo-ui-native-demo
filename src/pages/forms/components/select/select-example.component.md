@@ -12,7 +12,7 @@
 
 | 输出事件名 | 输出值（$event）  | 说明    |
 | --        | --        | --        |
-| `change` | `number`   | `$event` 为控件的 value。  |
+| `uiChange` | `number`   | `$event` 为控件的 value。  |
 
 
 ## ui-option 组件
@@ -29,4 +29,4 @@
 
 | 输出事件名 | 输出值（$event）  | 说明    |
 | --        | --        | --        |
-| `checked` | `OptionComponent`   | `$event` 为当前控件的实例。  |
+| `uiChecked` | `OptionComponent`   | `$event` 为当前控件的实例。  |

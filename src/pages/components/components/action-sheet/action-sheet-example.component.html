@@ -10,7 +10,7 @@
       <button class="ui-btn ui-btn-block ui-btn-primary" (click)="trigger(true)">点我弹出</button>
     </p>
     <ui-action-sheet [show]="isShow" (click)="trigger(false)">
-      <div class="sheet-content" uiStopPropagation="click">
+      <div class="sheet-content" ui-stop-propagation="click">
         <ui-list>
           <ui-list-item>action1</ui-list-item>
           <ui-list-item>action2</ui-list-item>

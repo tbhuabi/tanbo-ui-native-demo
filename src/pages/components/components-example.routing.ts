@@ -6,7 +6,7 @@ import { ActionSheetExampleComponent } from './components/action-sheet/action-sh
 import { AlertExampleComponent } from './components/alert/alert-example.component';
 import { CollectionExampleComponent } from './components/collection/collection-example.component';
 import { CollectionTabExampleComponent } from './components/collection-tab/collection-tab-example.component';
-import { ConfirmExampleComponent } from './components/confirm/confirm-example.component';
+import { DialogExampleComponent } from './components/dialog/dialog-example.component';
 import { FixedBarExampleComponent } from './components/fixed-bar/fixed-bar-example.component';
 import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 import { ListExampleComponent } from './components/list/list-example.component';
@@ -60,13 +60,13 @@ export const routes: Routes = [{
         doc: require('./components/collection-tab/collection-tab-example.component.md')
     }
 }, {
-    path: 'confirm',
-    component: ConfirmExampleComponent,
+    path: 'dialog',
+    component: DialogExampleComponent,
     canActivate: [SendDocService],
     data: {
-        ts: require('!!raw-loader!./components/confirm/confirm-example.component'),
-        html: require('!!raw-loader!./components/confirm/confirm-example.component.html'),
-        doc: require('./components/confirm/confirm-example.component.md')
+        ts: require('!!raw-loader!./components/dialog/dialog-example.component'),
+        html: require('!!raw-loader!./components/dialog/dialog-example.component.html'),
+        doc: require('./components/dialog/dialog-example.component.md')
     }
 }, {
     path: 'fixed-bar',

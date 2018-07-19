@@ -17,4 +17,4 @@
 
 | 输出事件名 | 输出值（$event）  | 说明    |
 | --        | --        | --        |
-| `change` | `boolean`   | `$event` 为当前控件是否选中。  |
+| `uiChange` | `boolean`   | `$event` 为当前控件是否选中。  |

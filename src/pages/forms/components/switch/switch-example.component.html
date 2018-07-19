@@ -16,7 +16,7 @@
         <ui-switch class="ui-warning"></ui-switch>
       </p>
       <h3>是否选中 {{result}}</h3>
-      <ui-switch [(ngModel)]="result"></ui-switch>
+      <ui-switch [(ngModel)]="result" (uiChange)="show($event)"></ui-switch>
     </ui-scroll>
   </ui-content>
 </ui-page>

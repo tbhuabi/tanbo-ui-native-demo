@@ -21,5 +21,5 @@
 ### 输出事件 @Output()
 | 输出事件名 | 输出值（$event）  | 说明    |
 | --        | --        | --        |
-| `sliding` | `number`   | 当用户拖动页面时的回调，`$event` 为拖动的进度，进度区间根据 `ui-collection-item` 的数量不同而不同。<br> 如： `ui-collection-item` 组件有3个时，则 `$event` 的值为 0~3。  |
-| `slidingFinish` | `number`   | 当用户切换完成一个页面后， `$event` 为当前页面的索引，以 0 开始 |
+| `uiSliding` | `number`   | 当用户拖动页面时的回调，`$event` 为拖动的进度，进度区间根据 `ui-collection-item` 的数量不同而不同。<br> 如： `ui-collection-item` 组件有3个时，则 `$event` 的值为 0~3。  |
+| `uiSlidingFinish` | `number`   | 当用户切换完成一个页面后， `$event` 为当前页面的索引，以 0 开始 |

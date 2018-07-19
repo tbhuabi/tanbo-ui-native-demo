@@ -8,7 +8,7 @@
   <ui-content>
     <div class="parent" (click)="parentHandle()">
       <p>我是父级</p>
-      <button class="ui-btn ui-btn-primary" type="button" ui-stop-propagation="" (click)="childHandle()">点我不会冒泡</button>
+      <button class="ui-btn ui-btn-primary" type="button" ui-stop-propagation (click)="childHandle()">点我不会冒泡</button>
       <button class="ui-btn ui-btn-primary" type="button" (click)="childHandle()">点我会冒泡</button>
     </div>
   </ui-content>

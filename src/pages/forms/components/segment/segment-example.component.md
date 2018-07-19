@@ -12,7 +12,7 @@
 
 | 输出事件名 | 输出值（$event）  | 说明    |
 | --        | --        | --        |
-| `change` | `number`   | `$event` 为控件的 value。  |
+| `uiChange` | `number`   | `$event` 为控件的 value。  |
 
 
 ## ui-segment-button
@@ -30,4 +30,4 @@
 
 | 输出事件名 | 输出值（$event）  | 说明    |
 | --        | --        | --        |
-| `checked` | `SegmentButtonComponent`   | `$event` 为当前控件的实例。  |
+| `uiChecked` | `SegmentButtonComponent`   | `$event` 为当前控件的实例。  |
