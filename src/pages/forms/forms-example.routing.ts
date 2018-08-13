@@ -10,7 +10,6 @@ import { SegmentExampleComponent } from './components/segment/segment-example.co
 import { SelectExampleComponent } from './components/select/select-example.component';
 import { SwitchExampleComponent } from './components/switch/switch-example.component';
 import { FormValidatorExampleComponent } from './components/form-validator/form-validator-example.component';
-import { ModelValidatorExampleComponent } from './components/model-validator/model-validator-example.component';
 
 export const routes: Routes = [{
     path: 'button',
@@ -103,14 +102,5 @@ export const routes: Routes = [{
         ts: require('!!raw-loader!./components/form-validator/form-validator-example.component'),
         html: require('!!raw-loader!./components/form-validator/form-validator-example.component.html'),
         doc: require('./components/form-validator/form-validator-example.component.md')
-    }
-}, {
-    path: 'model-validator',
-    component: ModelValidatorExampleComponent,
-    canActivate: [SendDocService],
-    data: {
-        ts: require('!!raw-loader!./components/model-validator/model-validator-example.component'),
-        html: require('!!raw-loader!./components/model-validator/model-validator-example.component.html'),
-        doc: require('./components/model-validator/model-validator-example.component.md')
     }
 }];

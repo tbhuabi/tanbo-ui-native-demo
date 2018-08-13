@@ -16,7 +16,6 @@ import { SegmentExampleComponent } from './components/segment/segment-example.co
 import { SelectExampleComponent } from './components/select/select-example.component';
 import { SwitchExampleComponent } from './components/switch/switch-example.component';
 import { FormValidatorExampleComponent } from './components/form-validator/form-validator-example.component';
-import { ModelValidatorExampleComponent } from './components/model-validator/model-validator-example.component';
 
 @NgModule({
   imports: [
@@ -35,8 +34,7 @@ import { ModelValidatorExampleComponent } from './components/model-validator/mod
     SegmentExampleComponent,
     SelectExampleComponent,
     SwitchExampleComponent,
-    FormValidatorExampleComponent,
-    ModelValidatorExampleComponent
+    FormValidatorExampleComponent
   ]
 })
 

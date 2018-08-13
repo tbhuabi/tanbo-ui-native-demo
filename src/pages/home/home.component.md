@@ -111,7 +111,7 @@ import './global.scss';
         <button>按扭</button>
       </ui-buttons>
       <!-- 如果需要头部，ui-navbar 是必需的，因为在 webview 全屏的情况下，ui-header 会有 20px 的 padding-top，用来显示手机的状态栏。如果你需要设置整个头部的背景颜色，则应该设置 ui-header 的背景，而不是 ui-navbar -->
-      <ui-title>标题<ui-title>
+      <ui-title>标题</ui-title>
       <!-- ui-buttons 组件不是必需的，只有在需要右上角有按扭时才声明-->
       <ui-buttons>
         <button>按扭</button>

@@ -6,7 +6,7 @@
     </ui-navbar>
   </ui-header>
   <ui-content>
-    <form novalidate [ui-validate-form]="form" #form="ngForm" (ngSubmit)="submit()">
+    <form novalidate (uiSubmit)="submit()">
       <ui-list>
         <ui-list-item>
           <ui-list-thumbnail>姓名：</ui-list-thumbnail>
