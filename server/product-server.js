@@ -17,10 +17,10 @@ app.use(historyApiFallback({}));
 app.use(express.static(appBasePath));
 app.use(favicon('/favicon.ico'));
 
-app.listen(appPort, globalConfig.ip, error => {
+app.listen(appPort, error => {
     if (error) {
         console.log(error);
-        return;
+        // return;
     }
-    open('http://' + globalConfig.ip + ':' + appPort);
+    // open('http://' + globalConfig.ip + ':' + appPort);
 });
