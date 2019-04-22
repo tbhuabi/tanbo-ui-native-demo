@@ -25,7 +25,7 @@ npm install @tanbo/ui-native --save
 ### 设置 viewport
 复制以下代码到你的 index.html 的 head 标签内
 ```html
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
 ```
 ### 在项目中导入 @tanbo/ui-native
 
