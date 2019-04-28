@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { SendDocService } from '../../app/send-doc.service';
-import { ButtonExampleComponent } from './components/button/button-example.component';
 import { CheckboxExampleComponent } from './components/checkbox/checkbox-example.component';
 import { DateExampleComponent } from './components/date/date-example.component';
 import { PickerExampleComponent } from './components/picker/picker-example.component';
@@ -12,15 +11,6 @@ import { SwitchExampleComponent } from './components/switch/switch-example.compo
 import { FormValidatorExampleComponent } from './components/form-validator/form-validator-example.component';
 
 export const routes: Routes = [{
-    path: 'button',
-    component: ButtonExampleComponent,
-    canActivate: [SendDocService],
-    data: {
-        ts: require('!!raw-loader!./components/button/button-example.component'),
-        html: require('!!raw-loader!./components/button/button-example.component.html'),
-        doc: require('./components/button/button-example.component.md')
-    }
-}, {
     path: 'checkbox',
     component: CheckboxExampleComponent,
     canActivate: [SendDocService],

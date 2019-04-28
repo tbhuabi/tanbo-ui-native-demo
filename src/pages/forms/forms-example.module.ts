@@ -6,7 +6,6 @@ import { UINativeModule } from '@tanbo/ui-native';
 
 import { routes } from './forms-example.routing';
 
-import { ButtonExampleComponent } from './components/button/button-example.component';
 import { CheckboxExampleComponent } from './components/checkbox/checkbox-example.component';
 import { DateExampleComponent } from './components/date/date-example.component';
 import { RadioExampleComponent } from './components/radio/radio-example.component';
@@ -25,7 +24,6 @@ import { FormValidatorExampleComponent } from './components/form-validator/form-
     FormsModule
   ],
   declarations: [
-    ButtonExampleComponent,
     CheckboxExampleComponent,
     DateExampleComponent,
     RadioExampleComponent,
