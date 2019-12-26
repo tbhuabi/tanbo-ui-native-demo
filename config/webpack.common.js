@@ -140,7 +140,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         ENV: JSON.stringify(isProduction ? 'production' : 'development'),
-        VERSION: JSON.stringify(require('../package').dependencies["@tanbo/ui"])
+        VERSION: JSON.stringify(require('../package').dependencies["@tanbo/ui-native"])
       }
     })
   ]
